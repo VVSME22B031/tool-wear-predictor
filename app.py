@@ -374,7 +374,7 @@ with c2:
               ("depth_of_cut_mm",f"{doc:.1f} mm",*bdg(doc,1.0)),
               ("vibration_magnitude",f"{vm:.3f} mm/s²",*bdg(vm,2.0)),
               ("spindle_load",f"{spindle}%",*bdg(spindle,70)),
-              ("surface_roughness",f"{roughness:.1f} µm",*bdg(rough,1.5)),
+              ("surface_roughness",f"{rough:.1f} µm",*bdg(rough,1.5)),
               ("mrr",f"{mrr:.1f} mm³/min",*bdg(mrr,150))]
         html="".join([f'<div class="br"><span class="bk">{r[0]}</span><div><span class="bv">{r[1]}</span><span class="bg_ {r[3]}">{r[2]}</span></div></div>' for r in rows])
         st.markdown(f'<div class="sec" style="margin-top:14px">Feature Breakdown</div><div class="bd">{html}</div>',unsafe_allow_html=True)
