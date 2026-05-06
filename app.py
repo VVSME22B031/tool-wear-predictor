@@ -73,8 +73,8 @@ THRESHOLD = 300.0
 # ── Load real ML models
 @st.cache_resource
 def load_models():
-    wear_path = "best_wear_model.pkl"
-    rul_path  = "best_rul_model.pkl"
+    wear_path = "best_wear_model (1).pkl"
+    rul_path  = "best_rul_model (1).pkl"
     if os.path.exists(wear_path) and os.path.exists(rul_path):
         wear_model = joblib.load(wear_path)
         rul_model  = joblib.load(rul_path)
